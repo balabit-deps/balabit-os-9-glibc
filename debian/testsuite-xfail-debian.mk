@@ -1,6 +1,25 @@
 ######################################################################
 # All architectures
 ######################################################################
+
+# original exit status 139
+test-xfail-tst-env-setuid = yes
+
+#error: ../sysdeps/unix/sysv/linux/tst-getcwd-smallbuff.c:136: mount failed: Permission denied
+#
+#error: ../sysdeps/unix/sysv/linux/tst-getcwd-smallbuff.c:233: not true: fd >= 0
+#error: ../sysdeps/unix/sysv/linux/tst-getcwd-smallbuff.c:50: not true: rmdir (MOUNT_NAME) == 0
+#error: 3 test failures
+test-xfail-tst-getcwd-smallbuff = yes
+
+# error: ../sysdeps/unix/sysv/linux/tst-ttyname.c:414: mount ("proc", "/proc", "proc", MS_NOSUID|MS_NOEXEC|MS_NODEV, NULL) == 0: Operation not permitted
+test-xfail-tst-ttyname = yes
+
+# error: test-container.c:1169: Unable to mount /proc:
+test-xfail-tst-nss-compat1 = yes
+test-xfail-tst-vfork3 = yes
+
+
 # These can fail when running with other loads or in a virtual machine
 test-xfail-tst-cpuclock2 = yes
 test-xfail-tst-cputimer1 = yes
