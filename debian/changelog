@@ -1,3 +1,9 @@
+glibc (2.35-0ubuntu3.1bb1) jammy; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Fri, 20 Jan 2023 15:14:56 +0100
+
 glibc (2.35-0ubuntu3.1) jammy; urgency=medium
 
   * debian/maint: add a script to manage backports of patches from upstream
