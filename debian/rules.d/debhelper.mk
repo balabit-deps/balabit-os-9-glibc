@@ -52,7 +52,7 @@ ifeq ($(filter nostrip,$(DEB_BUILD_OPTIONS)),)
 	if test "$(NOSTRIP_$(curpass))" != 1; then					\
 	  if test "$(DEBUG_$(curpass))" = 1; then					\
 	    if test "$(DEB_HOST_ARCH)" = "armhf"; then					\
-	      dh_strip -p$(curpass) -Xlibpthread -Xld-$(GLIBC_VERSION).so $(DH_STRIP_DEBUG_PACKAGE);	\
+	      dh_strip -p$(curpass) -Xlibpthread -Xld-linux-$(DEB_HOST_ARCH).so $(DH_STRIP_DEBUG_PACKAGE);	\
 	    else									\
 	      dh_strip -p$(curpass) -Xlibpthread $(DH_STRIP_DEBUG_PACKAGE);		\
 	    fi ;									\
@@ -66,7 +66,7 @@ ifeq ($(filter nostrip,$(DEB_BUILD_OPTIONS)),)
 	    done ;									\
 	  else										\
 	    if test "$(DEB_HOST_ARCH)" = "armhf"; then					\
-	          dh_strip -p$(curpass) -Xlibpthread -Xld-$(GLIBC_VERSION).so ;		\
+	          dh_strip -p$(curpass) -Xlibpthread -Xld-linux-$(DEB_HOST_ARCH).so ;		\
 	    else									\
 	          dh_strip -p$(curpass) -Xlibpthread ;					\
 	    fi ;									\
@@ -100,6 +100,7 @@ endif
 		-regex '.*/libpthread-.*so'						\
 		-o -regex '.*/libc-.*so' \)						\
 		-exec chmod a+x '{}' ';'
+	find debian/$(curpass) -type f -name libc.so.* -exec chmod a+x '{}' ';'
 	dh_makeshlibs -Xgconv/ -p$(curpass) -V "$(call xx,shlib_dep)"
 	# Add relevant udeb: lines in shlibs files
 	sh ./debian/shlibs-add-udebs $(curpass)
