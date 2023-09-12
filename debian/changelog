@@ -1,3 +1,9 @@
+glibc (2.35-0ubuntu3.3bb1) jammy; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Tue, 12 Sep 2023 19:38:36 +0000
+
 glibc (2.35-0ubuntu3.3) jammy; urgency=medium
 
   * Drop SVE patches due to kernal-related performance regression
