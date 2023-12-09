@@ -1,3 +1,9 @@
+glibc (2.35-0ubuntu3.5bb1) jammy; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 09 Dec 2023 03:24:49 +0000
+
 glibc (2.35-0ubuntu3.5) jammy-security; urgency=medium
 
   * SECURITY UPDATE: use-after-free through getcanonname_r plugin call
