@@ -1,3 +1,9 @@
+glibc (2.35-0ubuntu3.6bb1) jammy; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 13 Jan 2024 04:28:35 +0100
+
 glibc (2.35-0ubuntu3.6) jammy-security; urgency=medium
 
   * SECURITY REGRESSION: incorrect processing of address family with nscd
