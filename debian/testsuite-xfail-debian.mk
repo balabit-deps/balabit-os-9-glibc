@@ -19,6 +19,9 @@ test-xfail-tst-ttyname = yes
 test-xfail-tst-nss-compat1 = yes
 test-xfail-tst-vfork3 = yes
 
+# error: test-container.c:1092: could not create a private mount namespace
+test-xfail-tst-nss-gai-actions = yes
+test-xfail-tst-nss-gai-hv2-canonname = yes
 
 # These can fail when running with other loads or in a virtual machine
 test-xfail-tst-cpuclock2 = yes
