@@ -1,3 +1,9 @@
+glibc (2.35-0ubuntu3.8bb1) jammy; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 01 Jun 2024 02:23:18 +0000
+
 glibc (2.35-0ubuntu3.8) jammy-security; urgency=medium
 
   * SECURITY UPDATE: Stack-based buffer overflow
