@@ -1,3 +1,9 @@
+glibc (2.35-0ubuntu3.11bb1) jammy; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 27 Sep 2025 08:21:55 +0000
+
 glibc (2.35-0ubuntu3.11) jammy-security; urgency=medium
 
   * SECURITY UPDATE: double-free in regcomp function
