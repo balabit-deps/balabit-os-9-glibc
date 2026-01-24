@@ -1,3 +1,9 @@
+glibc (2.35-0ubuntu3.12bb1) jammy; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 24 Jan 2026 10:22:39 +0100
+
 glibc (2.35-0ubuntu3.12) jammy; urgency=medium
 
   * d/p/lp2089789-*.patch: fix malloc performance regression (LP: #2089789)
