@@ -1,3 +1,9 @@
+glibc (2.35-0ubuntu3.13bb1) jammy; urgency=medium
+
+  * Balabit patched version
+
+ -- Balabit Platform Team <devnull@dev.null>  Sat, 07 Feb 2026 10:22:02 +0100
+
 glibc (2.35-0ubuntu3.13) jammy-security; urgency=medium
 
   * SECURITY UPDATE: use-after-free in wordexp_t fields
